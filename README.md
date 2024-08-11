@@ -10,7 +10,7 @@
 
 ## A sneak peek into what we have here!
 
-Visit the website at:
+Visit the website at: https://cube-pi-five.vercel.app/
 
 ### Home Page (Desktp view)
 
