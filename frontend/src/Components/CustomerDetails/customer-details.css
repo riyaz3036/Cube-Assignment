@@ -1,0 +1,58 @@
+.customer_details{
+    min-height: calc(100vh - 60px);
+    background-color: #f9f9f9;
+    margin-left: 400px;
+    padding: 20px 80px;
+}
+
+.customer_details_title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.customer_details_address{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.customer_details_desc{
+    font-size: 16px;
+    text-align: center;
+    color: #707274;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1100px){
+    .customer_details{
+        margin-left: 0px;
+        padding: 20px 40px;
+    }    
+}
+
+@media (max-width: 540px){
+    .customer_details{
+        margin-left: 0px;
+        padding: 20px ;
+    }
+}
+
+@media (max-width: 350px){
+    .customer_details{
+        margin-left: 0px;
+        padding: 10px ;
+    }
+    .customer_details_title{
+        font-size: 20px;
+    }
+    
+    .customer_details_address{
+        font-size: 16px;
+    }
+    
+    .customer_details_desc{
+        font-size: 14px;
+    }
+}

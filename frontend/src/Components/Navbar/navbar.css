@@ -1,0 +1,80 @@
+.navbar_main{
+    width: 400px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.navbar_main::-webkit-scrollbar {
+    display: none; 
+}
+
+.navbar_hidden{
+    display: none;
+}
+
+.navbar_element{
+    background-color: #fff;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navbar_element_active{
+    background-color: #eeeeee;
+    border-right: 2px solid rgba(0,0,0,0.6);
+}
+
+.navbar_customer_title{
+    font-size: 18px;
+    white-space: nowrap;          
+    overflow: hidden;             
+    text-overflow: ellipsis;      
+    max-width: 100%; 
+}
+
+.navbar_customer_desc{
+    color: #707274;
+    font-size: 14px;
+    display: -webkit-box;              
+    -webkit-line-clamp: 4;             
+    -webkit-box-orient: vertical;      
+    overflow: hidden;                  
+    text-overflow: ellipsis; 
+    line-height: 1.5;               
+    max-height: calc(1.5em * 4);    
+    height: calc(1.5em * 4);  
+}
+
+.navbar_pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navbar_pagination button{
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 1150px) {
+    .navbar_hidden {
+        display: block;
+    }
+}
+
+@media (max-width: 540px){
+    .navbar_main{
+        width: 80%;
+    }
+}

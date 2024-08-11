@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://cube-7rs3.onrender.com';
