@@ -46,7 +46,7 @@ router.post('/upload', upload.single('image'), async (req, res) => {
 // Get 9 random images
 router.get('/images/random', async (req, res) => {
     try {
-      const randomImages = await Image.aggregate([{ $sample: { size: 9 } }]); // Get 9 random images
+      const randomImages = await Image.aggregate([{ $sample: { size: 9 } }]); 
       res.status(200).json(randomImages);
     } catch (error) {
       res.status(500).json({ error: 'Server error' });

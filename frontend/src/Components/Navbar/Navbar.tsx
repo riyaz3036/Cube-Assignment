@@ -15,24 +15,28 @@ interface NavbarProps {
   toggle: boolean;
 }
 
-const PAGE_SIZE = 10; // Updated to 10 customers per page
+const PAGE_SIZE = 10; // 10 customers per page
 
 const Navbar: React.FC<NavbarProps> = ({ selectedCustomer, setSelectedCustomer, toggle }) => {
+  //Pagination settings variables
   const [currentPage, setCurrentPage] = useState(0);
   const startIndex = currentPage * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
   const paginatedCustomers = customers.slice(startIndex, endIndex);
 
+  //Function to change selected customer 
   const handleCustomerChange = useCallback((customer: Customer) => {
     setSelectedCustomer(customer);
   }, [setSelectedCustomer]);
 
+  //To switch to next page
   const handleNextPage = () => {
     if (endIndex < customers.length) {
       setCurrentPage((prevPage) => prevPage + 1);
     }
   };
 
+  //To switch to previous page
   const handlePreviousPage = () => {
     if (currentPage > 0) {
       setCurrentPage((prevPage) => prevPage - 1);

@@ -13,6 +13,7 @@ interface Customer{
 
 function App() {
 
+  //state to store selected customer and handle navbar toggle
   const [selectedCustomer, setSelectedCustomer] = useState<Customer>(customers[0]);
   const [toggle,setToggle] = useState<boolean>(false);
 
@@ -25,7 +26,6 @@ function App() {
 
       {/* Navbar  */}
       <Navbar selectedCustomer={selectedCustomer} setSelectedCustomer={setSelectedCustomer} toggle={toggle} />
-      
       
       {/* Details of the selected customer */}
       <CustomerDetails selectedCustomer={selectedCustomer} />

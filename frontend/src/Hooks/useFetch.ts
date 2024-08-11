@@ -1,4 +1,3 @@
-// Example of a simple useFetch hook
 import { useState, useCallback } from 'react';
 
 const useFetch = <T,>(url: string) => {

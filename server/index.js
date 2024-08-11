@@ -9,8 +9,9 @@ dotenv.config();
 
 const app = express();
 
-// Connect to MongoDB
+// Connection to MongoDB
 connectDB();
+
 
 app.use(cors());
 
